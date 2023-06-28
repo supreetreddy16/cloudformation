@@ -3,7 +3,6 @@ frameworkVersion: '3'
 configValidationMode: error
 provider:
   name: aws
-  architecture: x86_64
   deploymentMethod: direct
   deploymentPrefix: cloudformation
 
