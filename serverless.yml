@@ -1,0 +1,11 @@
+service: cloudformation
+frameworkVersion: '3'
+configValidationMode: error
+provider:
+  name: aws
+  architecture: x86_64
+  deploymentMethod: direct
+  deploymentPrefix: cloudformation
+
+resources:
+  - ${file(resources/ec2.yml)}

@@ -1,0 +1,36 @@
+# Sample workflow to access AWS resources when workflow is tied to branch
+# The workflow Creates static website using aws s3
+name: AWS example workflow
+on:
+  push:
+    branches:
+      - '*'
+
+jobs:
+  Infra:
+    environment: dev
+    name: deploy infrastructure  
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write   
+      packages: write
+      contents: read    
+    steps:
+      - name: Git clone the repository
+        uses: actions/checkout@v3
+      - name: configure aws credentials
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          role-to-assume: ${{ secrets.AWS_OIDC_ROLE_ARN }}
+          aws-region: ap-south-1
+      - name: Installing serverless
+        run: |
+          npm install -g serverless
+      - name: authenticating to AWS
+        run: sls config credentials --provider aws --key ${{ env.AWS_ACCESS_KEY_ID }} --secret ${{ env.AWS_SECRET_ACCESS_KEY }}
+      - name: deploying infrastructure
+        run: sls deploy --stage dev
+
+
+
+
