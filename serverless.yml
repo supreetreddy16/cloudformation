@@ -1,10 +1,10 @@
-service: cloudformation
+service: infracreation
 frameworkVersion: '3'
 configValidationMode: error
 provider:
   name: aws
   deploymentMethod: direct
-  deploymentPrefix: cloudformation
+  deploymentPrefix: infracreation
 
 resources:
   - ${file(resources/ec2.yml)}
