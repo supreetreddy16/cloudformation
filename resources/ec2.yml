@@ -3,7 +3,7 @@ Resources:
   MyEC2Instance: 
     Type: AWS::EC2::Instance
     Properties: 
-      ImageId: "ami-012b9156f755804f5"
+      ImageId: "ami-03b31136fc503b84a"
       KeyName: "sudheerpem"
       BlockDeviceMappings: 
       - DeviceName: "/dev/sdm"
