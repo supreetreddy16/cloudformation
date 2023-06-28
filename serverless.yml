@@ -4,7 +4,8 @@ configValidationMode: error
 provider:
   name: aws
   deploymentMethod: direct
+  region: ap-south-1
   deploymentPrefix: infracreation
 
 resources:
-  - ${file(resources/ec2.yml)}
+  - ${file(./resources/ec2.yml)}

@@ -1,16 +1,8 @@
 ---
 Resources:
-  MyEC2Instance: 
+  EC2Instance:
     Type: AWS::EC2::Instance
-    Properties: 
-      ImageId: "ami-03b31136fc503b84a"
-      KeyName: "sudheerpem"
-      BlockDeviceMappings: 
-      - DeviceName: "/dev/sdm"
-        Ebs: 
-          VolumeType: "io1"
-          Iops: "200"
-          DeleteOnTermination: "false"
-          VolumeSize: "20"
-      - DeviceName: "/dev/sdk"
-        NoDevice: {}
+    Properties:
+      InstanceType: t2.micro
+      KeyName: mumbaikey
+      ImageId: ami-057752b3f1d6c4d6c
