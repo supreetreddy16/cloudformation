@@ -6,3 +6,8 @@ Resources:
       InstanceType: t2.micro
       KeyName: mumbaikey
       ImageId: ami-057752b3f1d6c4d6c
+
+  NewKeyPair:
+    Type: AWS::EC2::KeyPair
+    Properties:
+      KeyName: SudheerKeyPair
