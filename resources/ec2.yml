@@ -5,3 +5,8 @@ Resources:
     Properties:
       InstanceType: t2.micro
       ImageId: ami-071288aec7feafa11
+
+  MyRepository: 
+    Type: AWS::ECR::Repository
+    Properties: 
+      RepositoryName: "test-repository"
