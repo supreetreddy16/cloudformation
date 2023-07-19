@@ -1,21 +1,7 @@
 ---
 Resources:
-
-  NewKeyPair:
-    Type: AWS::EC2::KeyPair
-    Properties:
-      KeyName: SudheerKeyPair
-
-  EC2Instance:
-    Type: AWS::EC2::Instance
-    Properties:
-      InstanceType: t2.micro
-      ImageId: ami-057752b3f1d6c4d6c
-      KeyName: !Ref NewKeyPair
-
   EC2Instance1:
     Type: AWS::EC2::Instance
     Properties:
       InstanceType: t2.micro
       ImageId: ami-071288aec7feafa11
-      KeyName: !Ref NewKeyPair
