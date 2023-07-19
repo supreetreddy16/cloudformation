@@ -9,3 +9,4 @@ provider:
 
 resources:
   - ${file(./resources/ec2.yml)}
+  - ${file(./resources/ssmParameters.yml)}
