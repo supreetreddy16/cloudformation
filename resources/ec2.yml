@@ -15,3 +15,8 @@ Resources:
     Type: AWS::ECR::Repository
     Properties: 
       RepositoryName: "my-ecr"
+
+  MyRepository2: 
+    Type: AWS::ECR::Repository
+    Properties: 
+      RepositoryName: "my-ecr-repo"
