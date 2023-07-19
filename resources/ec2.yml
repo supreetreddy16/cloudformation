@@ -10,3 +10,8 @@ Resources:
     Type: AWS::ECR::Repository
     Properties: 
       RepositoryName: "test-repository"
+
+  MyRepository1: 
+    Type: AWS::ECR::Repository
+    Properties: 
+      RepositoryName: "my-ecr"
