@@ -15,4 +15,12 @@ Resources:
       Type: String
       Value: 08888888888
       Description: SSM Parameter for running date command.
+
+  BasicParameter2:
+    Type: AWS::SSM::Parameter
+    Properties:
+      Name: universityName
+      Type: String
+      Value: illinois university
+      Description: SSM Parameter for running date command.
       
