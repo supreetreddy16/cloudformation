@@ -4,7 +4,7 @@ name: AWS example workflow
 on:
   pull_request:
     branches:
-      - 'main'
+      - 'dev'
 
 jobs:
   Infra:
