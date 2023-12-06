@@ -5,7 +5,7 @@ Resources:
     Properties:
       Name: Email
       Type: String
-      Value: sudheer@gmail.com
+      Value: supreetreddy99@gmail.com
       Description: SSM Parameter for running date command.
 
   BasicParameter1:
