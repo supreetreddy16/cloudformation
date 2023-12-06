@@ -22,7 +22,7 @@ jobs:
         uses: aws-actions/configure-aws-credentials@v1
         with:
           role-to-assume: ${{ secrets.AWS_OIDC_ROLE_ARN }}
-          aws-region: ap-south-1
+          aws-region: us-east-2
       - name: Installing serverless
         run: |
           npm install -g serverless
