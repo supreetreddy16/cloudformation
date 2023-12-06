@@ -4,7 +4,7 @@ configValidationMode: error
 provider:
   name: aws
   deploymentMethod: direct
-  region: ap-south-1
+  region: us-east-2
   deploymentPrefix: infracreation
 
 resources:
