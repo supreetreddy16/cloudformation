@@ -4,7 +4,7 @@ Resources:
     Type: AWS::EC2::Instance
     Properties:
       InstanceType: t2.micro
-      ImageId: ami-0a6ed6689998f32a5
+      ImageId: ami-09f85f3aaae282910
 
   MyRepository: 
     Type: AWS::ECR::Repository
